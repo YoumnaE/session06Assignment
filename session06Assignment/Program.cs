@@ -61,6 +61,15 @@
 
             #endregion
 
+            #region Q9
+
+            string title = "Clean Code";
+            double price = 0;
+            bool book = TryGetPrice(title, out price);
+            Console.WriteLine($"{book} {price}");
+
+            #endregion
+
             Console.ReadLine();
         }
 
@@ -74,8 +83,9 @@
         #endregion
 
         #region Q4 Method
-        public static void PrintBookTitle(string title) { 
-        Console.WriteLine("Book title: " + title);
+        public static void PrintBookTitle(string title)
+        {
+            Console.WriteLine("Book title: " + title);
         }
 
         #endregion
@@ -107,15 +117,35 @@
 
         #endregion
 
-        #region Q8
+        #region Q8 Method
 
         public static void ReplaceArray(ref double[] prices)
         {
-            prices = [ 10.0, 12.5, 15.0 ];
+            prices = [10.0, 12.5, 15.0];
 
         }
 
         #endregion
+
+        #region Q9 Method
+
+        public static bool TryGetPrice(string title, out double price)
+        {
+            if (title == "Clean Code")
+            {
+                price = 25.0;
+                return true;
+            }
+            else
+            {
+                price = 0;
+                return false;
+            }
+
+
+        #endregion
+
+        }
     }
 
 }
