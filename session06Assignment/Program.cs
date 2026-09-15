@@ -46,7 +46,13 @@
 
             #endregion
 
+            #region Q7
 
+            AddBonusPagesByRef(ref pages);
+            Console.WriteLine(pages);
+            // prints new value since we sent reference not actual value
+
+            #endregion
 
 
             Console.ReadLine();
@@ -72,7 +78,7 @@
 
         public static void AddBonusPages(int pages)
         {
-            int totalPages = pages + 50;
+            pages = pages + 50;
         }
 
         #endregion
@@ -86,7 +92,14 @@
 
         #endregion
 
-    
+        #region Q7 Method
+
+        public static void AddBonusPagesByRef(ref int pages)
+        {
+            pages = pages + 50;
+        }
+
+        #endregion
     }
 
 }
