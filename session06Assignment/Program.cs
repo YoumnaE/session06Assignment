@@ -32,14 +32,17 @@
 
             int pages = 400;
             AddBonusPages(pages);
+            Console.WriteLine("Number of pages: " + pages);
+            // prints original value bec function only recieves value not the address
 
             #endregion
 
             #region Q6
 
             double[] prices1 = { 25.5, 40.0 };
+            ApplyDiscount(prices1);
             Console.WriteLine(prices1[0]);
-            // prints original value bec function only recieves value not the address
+            // prints new value since reference type sends address to function
 
             #endregion
 
@@ -70,19 +73,20 @@
         public static void AddBonusPages(int pages)
         {
             int totalPages = pages + 50;
-            Console.WriteLine("Number of pages: " + totalPages);
         }
 
         #endregion
 
-        #region Q6
+        #region Q6 Method
 
         public static void ApplyDiscount(double[] prices)
         {
-            prices[0] = prices[0] - 5;
+            prices[0] = prices[0] - 5.0;
         }
 
         #endregion
+
+    
     }
 
 }
