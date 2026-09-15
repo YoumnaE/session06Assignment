@@ -70,6 +70,19 @@
 
             #endregion
 
+            #region Q10
+
+            PrintBookInfo(title);
+            PrintBookInfo(title, pages);
+
+            #endregion
+
+            #region Q11
+
+            PrintBookInfo( pages: pages, title: title);
+
+            #endregion
+
             Console.ReadLine();
         }
 
@@ -141,11 +154,19 @@
                 price = 0;
                 return false;
             }
-
+        }
 
         #endregion
 
+
+        #region Q10 Method
+
+            public static void PrintBookInfo(string title, int pages = 300)
+        {
+            Console.WriteLine($"{title} {pages}");
         }
+
+         #endregion
     }
 
 }
