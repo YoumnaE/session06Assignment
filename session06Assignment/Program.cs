@@ -35,6 +35,15 @@
 
             #endregion
 
+            #region Q6
+
+            double[] prices1 = { 25.5, 40.0 };
+            Console.WriteLine(prices1[0]);
+            // prints original value bec function only recieves value not the address
+
+            #endregion
+
+
 
 
             Console.ReadLine();
@@ -62,6 +71,15 @@
         {
             int totalPages = pages + 50;
             Console.WriteLine("Number of pages: " + totalPages);
+        }
+
+        #endregion
+
+        #region Q6
+
+        public static void ApplyDiscount(double[] prices)
+        {
+            prices[0] = prices[0] - 5;
         }
 
         #endregion
