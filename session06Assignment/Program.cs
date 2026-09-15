@@ -9,6 +9,12 @@
             Console.WriteLine(prices[1]);
             #endregion
 
+            #region Q2
+
+            int[,] shelfCopies = { {3, 5}, {1, 1 } };
+            Console.WriteLine(shelfCopies[0, 0]);
+
+            #endregion
             Console.ReadLine();
         }
     }
