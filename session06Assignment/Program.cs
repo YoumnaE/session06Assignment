@@ -27,6 +27,16 @@
             PrintBookTitle("Clean Code");
 
             #endregion
+
+            #region Q5
+
+            int pages = 400;
+            AddBonusPages(pages);
+
+            #endregion
+
+
+
             Console.ReadLine();
         }
 
@@ -42,6 +52,16 @@
         #region Q4 Method
         public static void PrintBookTitle(string title) { 
         Console.WriteLine("Book title: " + title);
+        }
+
+        #endregion
+
+        #region Q5 Method
+
+        public static void AddBonusPages(int pages)
+        {
+            int totalPages = pages + 50;
+            Console.WriteLine("Number of pages: " + totalPages);
         }
 
         #endregion
