@@ -83,6 +83,12 @@
 
             #endregion
 
+            #region Q12
+
+            string[] titles = ["Clean Code", "Tech", "Tech Book"];
+            PrintAllTitles(titles);
+
+            #endregion
             Console.ReadLine();
         }
 
@@ -158,7 +164,6 @@
 
         #endregion
 
-
         #region Q10 Method
 
             public static void PrintBookInfo(string title, int pages = 300)
@@ -166,7 +171,18 @@
             Console.WriteLine($"{title} {pages}");
         }
 
-         #endregion
+        #endregion
+
+        #region Q12 Method
+
+        public static void PrintAllTitles(string[] titles)
+        {
+            for (int i = 0; i < titles.Length; i++)
+            {
+                Console.WriteLine(titles[i]);
+            }
+        }
+        #endregion
     }
 
 }
