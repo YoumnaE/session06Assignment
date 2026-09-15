@@ -54,6 +54,12 @@
 
             #endregion
 
+            #region Q8
+
+            ReplaceArray(ref prices1);
+            Console.WriteLine(prices1.Length);
+
+            #endregion
 
             Console.ReadLine();
         }
@@ -97,6 +103,16 @@
         public static void AddBonusPagesByRef(ref int pages)
         {
             pages = pages + 50;
+        }
+
+        #endregion
+
+        #region Q8
+
+        public static void ReplaceArray(ref double[] prices)
+        {
+            prices = [ 10.0, 12.5, 15.0 ];
+
         }
 
         #endregion
